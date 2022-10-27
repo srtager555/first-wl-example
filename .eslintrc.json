@@ -1,0 +1,22 @@
+{
+  "ignorePatterns": ["lib/", "dist/"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "next/core-web-vitals"
+  ],
+  "plugins": ["prettier", "react", "@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": ["warn"],
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-explicit-any": "warn"
+  }
+}
