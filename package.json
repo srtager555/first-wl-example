@@ -4,7 +4,9 @@
   "description": "None",
   "main": "index.js",
   "scripts": {
-    "test": "next dev"
+    "build": "next build",
+    "start": "next start",
+    "dev": "next dev"
   },
   "repository": {
     "type": "git",
@@ -25,11 +27,13 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "styled-components": "^5.3.6",
-    "typescript": "^4.8.4",
     "wrapping-letters-react": "^2.5.1"
   },
   "devDependencies": {
+    "@types/node": "^18.11.7",
+    "@types/react": "^18.0.24",
     "eslint": "^8.26.0",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
   }
 }
