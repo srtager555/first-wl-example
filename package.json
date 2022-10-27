@@ -1,0 +1,35 @@
+{
+  "name": "first-wl-example",
+  "version": "1.0.0",
+  "description": "None",
+  "main": "index.js",
+  "scripts": {
+    "test": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srtager555/first-wl-example.git"
+  },
+  "keywords": [
+    "wrapping-letters"
+  ],
+  "author": "Carlos && Ponce",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srtager555/first-wl-example/issues"
+  },
+  "homepage": "https://github.com/srtager555/first-wl-example#readme",
+  "dependencies": {
+    "next": "^13.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "styled-components": "^5.3.6",
+    "typescript": "^4.8.4",
+    "wrapping-letters-react": "^2.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "prettier": "^2.7.1"
+  }
+}
