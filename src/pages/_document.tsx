@@ -1,6 +1,15 @@
+import styled from "styled-components";
+
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
+  const Body = styled.body`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdfdfd;
+  `;
+
   return (
     <Html>
       <Head>
@@ -15,10 +24,10 @@ export default function Document() {
           rel="stylesheet"
         ></link>
       </Head>
-      <body>
+      <Body>
         <Main />
         <NextScript />
-      </body>
+      </Body>
     </Html>
   );
 }
