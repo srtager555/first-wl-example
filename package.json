@@ -27,7 +27,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "styled-components": "^5.3.6",
-    "wrapping-letters-react": "^2.5.1"
+    "wrapping-letters-react": "^2.5.4"
   },
   "devDependencies": {
     "@types/node": "^18.11.7",
