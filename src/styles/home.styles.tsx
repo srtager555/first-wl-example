@@ -15,9 +15,9 @@ export const Background = styled.div`
   background: linear-gradient(
     0deg,
     rgba(0, 212, 255, 1) 0%,
-    rgba(9, 9, 121, 1) 33%,
+    rgba(9, 9, 121, 1) 30%,
     rgba(2, 0, 36, 1) 50%,
-    rgba(9, 9, 121, 1) 67%,
+    rgba(9, 9, 121, 1) 70%,
     rgba(0, 212, 255, 1) 100%
   );
   background-clip: text;
