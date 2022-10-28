@@ -1,11 +1,14 @@
-import { Title } from "@components/title.component";
-import { Content, Container } from "@styles/home.styles";
+import { MainText } from "@components/mainText.component";
+import { Content, Container, Background } from "@styles/home.styles";
 
 function Home() {
   return (
     <Container>
       <Content>
-        <Title text="WRAPPING LETTERS" />
+        <Background>
+          <MainText text="WRAPPING" />
+          <MainText text="LETTERS" />
+        </Background>
       </Content>
     </Container>
   );
