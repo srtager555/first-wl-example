@@ -1,10 +1,4 @@
-import styled from "styled-components";
-
-const ContentContainer = styled.div`
-  height: 1000px;
-  width: 1000px;
-  background-color: #fff;
-`;
+import { ContentContainer } from "@styles/home.styles";
 
 function Home() {
   return (
