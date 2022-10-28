@@ -1,10 +1,13 @@
-import { ContentContainer } from "@styles/home.styles";
+import { Title } from "@components/title.component";
+import { Content, Container } from "@styles/home.styles";
 
 function Home() {
   return (
-    <ContentContainer>
-      <p>a</p>
-    </ContentContainer>
+    <Container>
+      <Content>
+        <Title text="WRAPPING LETTERS" />
+      </Content>
+    </Container>
   );
 }
 
