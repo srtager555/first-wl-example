@@ -8,3 +8,13 @@ export const Secondary = styled.p`
   color: transparent;
   margin-bottom: 20px;
 `;
+
+export const SpanContainer = styled.span`
+  display: inline-block;
+  overflow: hidden;
+`;
+
+export const Span = styled.span`
+  display: inline-block;
+  transform: translateY(50%);
+`;
