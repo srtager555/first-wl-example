@@ -31,6 +31,7 @@
     "wrapping-letters-react": "^2.5.4"
   },
   "devDependencies": {
+    "@types/animejs": "^3.1.6",
     "@types/node": "^18.11.7",
     "@types/react": "^18.0.24",
     "@types/styled-components": "^5.1.26",
