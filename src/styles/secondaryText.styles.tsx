@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const Secondary = styled.p`
-  font-size: 100px;
+  font-size: 95px;
   text-align: center;
-  font-family: "Playfair Display";
+  font-family: "Bebas Neue", serif;
+  text-transform: uppercase;
+  color: transparent;
+  margin-bottom: 20px;
 `;
