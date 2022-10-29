@@ -16,8 +16,8 @@ export function animation(TARGETS: Element[]) {
   anime({
     targets: TARGETS,
     translateY: ["100%", "0%"],
-    delay: anime.stagger(100, { from: "center" }),
-    duration: 3000,
+    delay: anime.stagger(50, { from: "center" }),
+    duration: 1000,
     easing: "easeOutQuint",
   });
 }
