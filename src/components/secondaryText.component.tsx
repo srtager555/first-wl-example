@@ -12,6 +12,16 @@ function Custom({ letter, cssClass }) {
   );
 }
 
+export function animation(TARGETS: Element[]) {
+  anime({
+    targets: TARGETS,
+    translateY: ["100%", "0%"],
+    delay: anime.stagger(100, { from: "center" }),
+    duration: 1000,
+    easing: "easeOutQuint",
+  });
+}
+
 export function SecondaryText({ text }: { text: string }) {
   const ParentRef: LegacyRef<HTMLParagraphElement> = useRef(null);
 
@@ -20,13 +30,7 @@ export function SecondaryText({ text }: { text: string }) {
 
     const TARGETS = Array.from(PRE_TARGETS, (element) => element.children[0]);
 
-    anime({
-      targets: TARGETS,
-      translateY: ["100%", "0%"],
-      delay: anime.stagger(100, { from: "center" }),
-      duration: 1000,
-      easing: "easeOutQuint",
-    });
+    animation(TARGETS);
   }, []);
 
   return (
