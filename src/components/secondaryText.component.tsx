@@ -5,7 +5,7 @@ import { Secondary } from "@styles/secondaryText.styles";
 export function SecondaryText({ text }: { text: string }) {
   return (
     <Secondary>
-      <Wl />
+      <Wl text={text} />
     </Secondary>
   );
 }
