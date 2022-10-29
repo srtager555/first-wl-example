@@ -11,19 +11,24 @@ function Custom({ letter, top }) {
 export function MainText({
   text,
   top = false,
+  reset,
 }: {
   text: string;
   top?: boolean;
+  reset: boolean;
 }) {
   const ParentRef: LegacyRef<HTMLParagraphElement> = useRef(null);
 
-  useEffect(function () {
-    const PRE_TARGETS: HTMLCollection = ParentRef.current.children;
+  useEffect(
+    function () {
+      const PRE_TARGETS: HTMLCollection = ParentRef.current.children;
 
-    const TARGETS = Array.from(PRE_TARGETS);
+      const TARGETS = Array.from(PRE_TARGETS);
 
-    animation(TARGETS);
-  }, []);
+      animation(TARGETS);
+    },
+    [reset]
+  );
 
   return (
     <Title ref={ParentRef}>

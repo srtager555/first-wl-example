@@ -17,21 +17,30 @@ export function animation(TARGETS: Element[]) {
     targets: TARGETS,
     translateY: ["100%", "0%"],
     delay: anime.stagger(100, { from: "center" }),
-    duration: 1000,
+    duration: 3000,
     easing: "easeOutQuint",
   });
 }
 
-export function SecondaryText({ text }: { text: string }) {
+export function SecondaryText({
+  text,
+  reset,
+}: {
+  text: string;
+  reset: boolean;
+}) {
   const ParentRef: LegacyRef<HTMLParagraphElement> = useRef(null);
 
-  useEffect(function () {
-    const PRE_TARGETS: HTMLCollection = ParentRef.current.children;
+  useEffect(
+    function () {
+      const PRE_TARGETS: HTMLCollection = ParentRef.current.children;
 
-    const TARGETS = Array.from(PRE_TARGETS, (element) => element.children[0]);
+      const TARGETS = Array.from(PRE_TARGETS, (element) => element.children[0]);
 
-    animation(TARGETS);
-  }, []);
+      animation(TARGETS);
+    },
+    [reset]
+  );
 
   return (
     <Secondary ref={ParentRef}>
