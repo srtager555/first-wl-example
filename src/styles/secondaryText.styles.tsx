@@ -5,8 +5,6 @@ export const Secondary = styled.p`
   text-align: center;
   font-family: "Bebas Neue", serif;
   text-transform: uppercase;
-  color: transparent;
-  margin-bottom: 20px;
 `;
 
 export const SpanContainer = styled.span`
@@ -16,5 +14,7 @@ export const SpanContainer = styled.span`
 
 export const Span = styled.span`
   display: inline-block;
-  transform: translateY(50%);
+  white-space: pre;
+  transform: translateY(0%);
+  color: ${(props) => (props.color ? props.color : "rgba(2, 0, 36, 1)")};
 `;
