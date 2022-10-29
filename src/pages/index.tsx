@@ -7,7 +7,7 @@ function Home() {
     <Container>
       <Content>
         <Background>
-          <MainText text="WRAPPING" />
+          <MainText text="WRAPPING" top={true} />
           <SecondaryText text="Package.to.work.with.letters" />
           <MainText text="LETTERS" />
         </Background>
