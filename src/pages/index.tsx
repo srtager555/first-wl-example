@@ -8,7 +8,7 @@ function Home() {
       <Content>
         <Background>
           <MainText text="WRAPPING" />
-          <SecondaryText text="Package to work with letters" />
+          <SecondaryText text="Package.to.work.with.letters" />
           <MainText text="LETTERS" />
         </Background>
       </Content>
